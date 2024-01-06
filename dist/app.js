@@ -1,5 +1,10 @@
 
 $(document).ready(function(){
+
+    let date = new Date()
+    let year = date.getFullYear()
+    $("#date").text(year)
+
     //Disabled inspect element
     $(document).bind('contextmenu', function(e){
         e.preventDefault();
